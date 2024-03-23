@@ -19,6 +19,3 @@ def insert(request):
 def read(request):
 	data=Student.objects.all()#get database data
 	return render(request,'read.html',{'info':data})
-def update(request,id):
-	data=Student.objects.get(id=id)
-	return render(request,'update.html',{'data':data})
