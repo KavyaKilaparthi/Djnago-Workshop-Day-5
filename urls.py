@@ -19,6 +19,5 @@ from CrudApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('insert/',views.insert,name='insert'),
-    path('read/',views.read,name='read'),
-    path('update/<int:id>/',views.update,name='update')
+    path('read/',views.read,name='read')
 ]
